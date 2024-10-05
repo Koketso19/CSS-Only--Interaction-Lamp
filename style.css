@@ -13,6 +13,8 @@
     background-position: center;
     background-size: cover;
     padding: 0 8%;
+    position: relative;
+
 }
 
 .logo{
@@ -21,4 +23,63 @@
     cursor: pointer;
 }
 
-.content
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span{
+    color: #ff375f;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    padding: 12px 25px;
+    color:fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.launch-time{
+    display: flex;
+}
+
+.launch-time div{
+    flex-basis: 100px;
+}
+
+.launch-time p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.rocket{
+    width: 240px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    animation: rocket 4s liner infinite;
+    background-color: transparent;
+}
+@keyframes rocket{
+
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
