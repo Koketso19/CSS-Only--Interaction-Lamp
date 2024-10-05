@@ -6,3 +6,17 @@
     box-sizing: border-box;
 }
 
+.container{
+    width: 100vh;
+    height: 100vh;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
