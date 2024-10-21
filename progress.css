@@ -12,12 +12,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .skill{
     width: 160px;
     height: 160px;
-    position: relative;
+    position: relative; 
+    justify-content: space-around;
+    
 }
 
 .outer{
@@ -25,6 +28,7 @@ body{
     width:160px;
     border-radius: 50%;
     padding: 20px;
+    
     box-shadow: 6px 6px 10px -1px rgba(0,0,0.15),
                 -6px -6px 10px -1px rgba(255,255,255,0.7);
 }
@@ -66,4 +70,10 @@ svg{
     100%{
         stroke-dashoffset: 165;
     }
+}
+h6{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 50px ;
+    text-align: center;
 }
