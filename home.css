@@ -45,57 +45,45 @@ p{
 
 body{
     width: 100%;
+    background-color: #081b29;
 }
 logo{
     height: px;
 }
 
 #header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding:20px 88px ;
-    background: #E3E6F3;
-    box-shadow: 0 5px 15px rgb(0.0, 0 , 0.06);
-    z-index: 999;
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-#navbar {
-    display: flex;
     align-items: center;
-    justify-content: center;}
- 
- #navbar li{
-    list-style: none;
-    padding: 0 20px;
-    position: relative;
+    z-index: 100;
  }
- 
- #navbar li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: 1a1a1a;
-    transition: 0.3s ease;
- }
-
- #navbar li a:hover,
- #navbar li a.active {
-    color: #088178;
- }
- #navbr li a.active::after,
- #navbar li a:hover::after{
-    content:"";
-    width: 30%;
-    background: #088178;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
+ .logo{
+   font-size: 25px;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600 ;
+   cursor: default;
  }
   
- /* Home page */
+ .navbar a{
+   font-size: 18px;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 35px;
+ }
+
+ .navbar :hover,
+ .navbar a.active {
+   color: #0ef;
+ }
+ /* Ho page */
  #hero{
     background-image: url(image/hero4.png);
     height: 90vh;
