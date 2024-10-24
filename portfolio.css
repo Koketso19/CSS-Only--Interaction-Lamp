@@ -1,14 +1,14 @@
 .body{
-    background-color: #081b29;
-    display: flex;                /* Enables Flexbox layout */
-    justify-content: space-around; /* Distributes space evenly */
-    flex-wrap: wrap;             /* Allows wrapping to next line if needed */
-}
-
-
-
-
+    background-color:black;
     
+
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
 
 #hero{
     background-image: url(image/hero4.png);
@@ -23,6 +23,10 @@
     justify-content: center;
  }
 
+.section-p1{
+    padding-top: 80px;
+}
+
  #hero h4{
     padding-bottom: 15px;
  }
@@ -31,17 +35,16 @@
     color: #088178;
  }
 
- 
- 
 
  #feature .fe-box{
+    justify-content: space-between;
     width: 180px;
     text-align: center;
     padding: 25px 15px ;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
     border: 1px solid #cce7d0;
     border-radius: 4px ;
-    margin: 15px 0;
+    margin: 15px 49px;
     
 }
     
