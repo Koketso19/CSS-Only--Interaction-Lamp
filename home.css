@@ -120,7 +120,29 @@ logo{
  .btn-box a:hover::before{
    width: 100%;
  }
- /* Ho page */
+
+ .home-sci{
+   position: absolute;
+   bottom: 40px;
+   width: 170px;
+   display: flex;
+   justify-content: space-between;
+ }
+ .home-sci a {
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 40px;
+   height: 40px;
+   background: transparent;
+   border: 2px solid #00abf0;
+   border-radius: 50%;
+   font-size: 20px;
+   color:#00abf0;
+   text-decoration: none;
+ }
+ /* Ho page 
  #hero{
     background-image: url(image/hero4.png);
     height: 90vh;
