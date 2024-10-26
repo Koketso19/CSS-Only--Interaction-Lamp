@@ -12,6 +12,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+   
     
 }
 
@@ -20,6 +21,7 @@ body{
     height: 160px;
     position: relative; 
     justify-content: space-around;
+    margin: 40px;
     
 }
 

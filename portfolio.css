@@ -212,7 +212,11 @@
  .card{
    
     
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     width: 10em;
     height: 12em;
     position: relative;
