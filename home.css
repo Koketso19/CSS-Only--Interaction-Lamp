@@ -228,5 +228,71 @@ logo{
 
  #product1{
    text-align: center;
+ }*/
+ 
+ .heading{
+  font-size: 8rem;
+  text-align: center;
+  margin: 5rem 0;
+
  }
 
+ .education{
+  padding-bottom: 5rem;
+  background: var(--secound-big-color);
+ }
+
+.education h2{
+  margin-bottom: 5rem;
+}
+
+.timeline-item{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline-item::before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background-color: var(--main-color);
+  left: calc(50% - 1px);
+
+}
+
+.timeline-item{
+  margin-bottom: 40px;
+  width: 100px;
+  position: relative;
+}
+
+.timeline-item:last-child{
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% - 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even){
+  padding-left: calc(50% +30%);
+}
+
+.timeline-dot{
+  height: 21px;
+  width: 21px;
+  background-color: #00abf0;
+  box-shadow: 0 0 25px var(#00abf0),
+              0 0 50px var(#00abf0);
+
+position: absolute;
+left: calc(50% - 80px);
+border-radius: 50%;
+top: 10px;
+
+}
