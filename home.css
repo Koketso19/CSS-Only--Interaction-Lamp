@@ -6,12 +6,18 @@
     font-family: 'spartan', sans-serif;
     scroll-behavior: smooth;
   }
+  :root{
+    --big-color: #080808;
+    --secound-big-color:#131313;
+    --text-color: white;
+    --main-color: #00ffee;
+  }
 
 
 body{
     width: 100%;
-    background-color: #080808;
-    color: #ededed;
+    background-color: var(--big-color);
+    color: var(--text-color);
 }
 logo{
     height: px;
@@ -22,49 +28,63 @@ logo{
     top: 0%;
     left: 0%;
     width: 100%;
-    padding: 20px 10%;
-    background: transparent;
+    padding: 3rem 11% 3rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(19px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 5;
  }
  .logo{
    font-size: 25px;
-   color: #fff;
+   color: var(--text-color);
    text-decoration: none;
-   font-weight: 600 ;
-   cursor: default;
+   font-weight: 800 ;
+   cursor: pointer;
+   transition: 0.3s ease;
+ }
+ .logo:hover{
+  transform: scale(1.1);
+ }
+ .logo span{
+  text-shadow: 0 0 25px var(--main-color);
  }
   
  .navbar a{
-   font-size: 18px;
-   color: #fff;
+   font-size: 1.4rem;
+   color: var(--text-color);
    text-decoration: none;
    font-weight: 500;
-   margin-left: 35px;
+   margin-left: 4rem;
+   transition: 0.3s ease;
+   border-bottom: 3px solid transparent;
  }
 
  .navbar :hover,
  .navbar a.active {
-   color: #0ef;
+   color: var(--main-color);
+   border-bottom: 3px solid var(--main-color);
  }
 
  .home{
    height: 100vh;
    display: flex;
    align-items: center;
-   padding: 0 10%;
+   padding: 100px;
+   min-height: 100vh;
  }
 
  .home-content{
    max-width: 600px;
+   
 
  }
  .home-content h1{
    font-size: 56px;
    font-weight: 700;
    line-height: 1.2;
+   padding-top: 100px;
    
  }
  .home-content h3{
@@ -230,12 +250,7 @@ logo{
  #product1{
    text-align: center;
  }*/
-:root{
-  --big-color: 880888;
-  --secound-big-color:#131313;
-  --text-color: white;
-  --main-color: #00ffee;
-}
+
  .heading{
   font-size: 8rem;
   text-align: center;
@@ -283,20 +298,20 @@ logo{
 }
 
 .timeline-item:nth-child(odd){
-  padding-right: calc(50% - 30px);
+  padding-right: calc(50% + 30px);
   text-align: right;
 }
 
 .timeline-item:nth-child(even){
-  padding-left: calc(50% - 30px);
+  padding-left: calc(50% + 30px);
 }
 
 .timeline-dot{
   height: 21px;
   width: 21px;
   background-color: #00abf0;
-  box-shadow: 0 0 25px var(#00abf0),
-              0 0 50px var(#00abf0);
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 50px var(var(--main-color));
 
 position: absolute;
 left: calc(50% - 8px);
@@ -315,4 +330,38 @@ top: 10px;
 .timeline-content {
   background-color: var(--big-color) ;
   border: 3px solid var(--main-color);
+  padding: 30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.timeline-content h3{
+  font-size: 20px;
+  color: white;
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+ 
+.timeline-content p{
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--big-color);
+  width: 50px;
 }
