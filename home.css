@@ -4,12 +4,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'spartan', sans-serif;
-}
+    scroll-behavior: smooth;
+  }
 
 
 body{
     width: 100%;
-    background-color: #081b29;
+    background-color: #080808;
     color: #ededed;
 }
 logo{
@@ -229,7 +230,12 @@ logo{
  #product1{
    text-align: center;
  }*/
- 
+:root{
+  --big-color: 880888;
+  --secound-big-color:#131313;
+  --text-color: white;
+  --main-color: #00ffee;
+}
  .heading{
   font-size: 8rem;
   text-align: center;
@@ -238,7 +244,9 @@ logo{
  }
 
  .education{
-  padding-bottom: 5rem;
+
+
+  padding: 100px 5px;
   background: var(--secound-big-color);
  }
 
@@ -266,7 +274,7 @@ logo{
 
 .timeline-item{
   margin-bottom: 40px;
-  width: 100px;
+  width: 100%;
   position: relative;
 }
 
@@ -280,7 +288,7 @@ logo{
 }
 
 .timeline-item:nth-child(even){
-  padding-left: calc(50% +30%);
+  padding-left: calc(50% - 30px);
 }
 
 .timeline-dot{
@@ -291,8 +299,20 @@ logo{
               0 0 50px var(#00abf0);
 
 position: absolute;
-left: calc(50% - 80px);
+left: calc(50% - 8px);
 border-radius: 50%;
 top: 10px;
 
+}
+
+.timeline-date{
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin: 6px 0 15px ;
+}
+
+.timeline-content {
+  background-color: var(--big-color) ;
+  border: 3px solid var(--main-color);
 }
