@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+    scroll-behavior: smooth;
+  }
+  :root{
+    --big-color: #080808;
+    --secound-big-color:#131313;
+    --text-color: white;
+    --main-color: #00ffee;
+  }
+
+
+body{
+    width: 100%;
+
+}
+
+.projects{
+    background: rgb(177, 43, 43);
+    background-size: cover;
+}
+
+.projects-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    margin: 5rem 8;
+    gap: 3rem;
+    row-gap: 5rew;
+}
+
+.project-card{
+    height: 600px;
+    max-width: 450px;
+    background-color: rgba(0, 0 , 0, 0.3);
+    backdrop-filter: blur(38px);
+    border-radius:5rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.4s ease;
+}
